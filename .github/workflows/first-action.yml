@@ -10,8 +10,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
     # custom job name
     first-job:
       # The type of runner that the job will run on
@@ -21,7 +19,7 @@ jobs:
       steps:
         # Runs a single command using the runners shell
         - name: Print greeting
-        run: echo "Hello WOrld!"
+          run: echo "Hello World!"
 
         - name: Print goodbye
-        run: echo "Done -bye!"
+          run: echo "Done -bye!"
